@@ -26,12 +26,15 @@ export default makeStyles((props) => ({
         border: 'groove 3px #fff',
         padding: '1px 8px',
         borderRadius: '8px',     
-        background: '#1119',
+        background: 'rgba(0,0,0,0.8)',
         zIndex: 10,
         height: '40px'
     },
     title: {      
         fontSize: '14px',
+        textTransform: 'uppercase',
+        textAlign: 'center',
+        letterSpacing: '1.4px'
     },
     section: {
         boxSizing: 'border-box',
@@ -50,7 +53,7 @@ export default makeStyles((props) => ({
         border: 'groove 3px #fff',
         padding: '1px 8px',
         borderRadius: '8px',     
-        background: '#1119',
+        background: 'rgba(0,0,0,0.8)',
         zIndex: 13,
         margin: 0,
         fontSize: '12px',
@@ -67,13 +70,14 @@ export default makeStyles((props) => ({
         height: '100px',
         border: 'groove 3px #fff',
         borderRadius: '0  0 8px 8px',     
-        background: '#1119',
+        background: 'rgba(0,0,0,0.8)',
         zIndex: 11,
         margin: 0,
         marginTop: '-3px',
         fontSize: '11px',
         fontWeight: '600',
         letterSpacing: '1.1px',
+        lineHeight: '16px',
         padding: 6
     }
 }))

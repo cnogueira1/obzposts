@@ -10,7 +10,7 @@ export const Card = (props) => {
             <img className={classes.image} src={post.selectedFile} alt="" />
             <div className={classes.header}>
                 <h1 className={classes.title}>    
-                    NOME DA POSTAGEM
+                    {post.title}
                 </h1>
             </div>
             
@@ -19,7 +19,7 @@ export const Card = (props) => {
                     {post.name}
                 </p>
                 <p className={classes.textArea}>
-                    RESUMO DA POSTAGEM
+                    {post.message.split(' ').splice(0, 20).join(' ')}
                 </p>        
             </div>
         </div>
