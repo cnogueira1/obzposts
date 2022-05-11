@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getPosts } from '../../actions/posts'
 
 import Post from './Post/Post';
+import { Card } from './Card/Card';
 import useStyles from './styles';
 
 const Posts = ({ setCurrentId }) => {
@@ -28,9 +29,11 @@ const Posts = ({ setCurrentId }) => {
   return (
     isLoading ? <CircularProgress /> : (
       <Grid className={classes.container} container alignItems="stretch" spacing={3}>
+
         {posts?.map((post) => (
           <Grid key={post._id} item xs={12} sm={12} md={6} lg={3}>
-            <Post post={post} setCurrentId={setCurrentId} />
+            {/* <Post post={post} setCurrentId={setCurrentId} /> */}
+            <Card post={post} />
           </Grid>
         ))}
       </Grid>
