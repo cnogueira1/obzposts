@@ -10,7 +10,7 @@ export default makeStyles((props) => ({
         color: '#fff',
         padding: 16,
         position: 'relative',
-        overflow: 'hidden'
+        overflow: 'hidden',
     },
     image: {
         position: 'absolute',
@@ -25,16 +25,17 @@ export default makeStyles((props) => ({
         width: '100%',
         border: 'groove 3px #fff',
         padding: '1px 8px',
-        borderRadius: '8px',     
+        borderRadius: '8px',
         background: 'rgba(0,0,0,0.8)',
         zIndex: 10,
-        height: '40px'
+        height: '40px',
+        cursor: 'pointer'
     },
-    title: {      
+    title: {
         fontSize: '14px',
         textTransform: 'uppercase',
         textAlign: 'center',
-        letterSpacing: '1.4px'
+        letterSpacing: '1.4px',
     },
     section: {
         boxSizing: 'border-box',
@@ -52,7 +53,7 @@ export default makeStyles((props) => ({
         width: '100%',
         border: 'groove 3px #fff',
         padding: '1px 8px',
-        borderRadius: '8px',     
+        borderRadius: '8px',
         background: 'rgba(0,0,0,0.8)',
         zIndex: 13,
         margin: 0,
@@ -69,7 +70,7 @@ export default makeStyles((props) => ({
         width: '95%',
         height: '100px',
         border: 'groove 3px #fff',
-        borderRadius: '0  0 8px 8px',     
+        borderRadius: '0  0 8px 8px',
         background: 'rgba(0,0,0,0.8)',
         zIndex: 11,
         margin: 0,
@@ -79,5 +80,19 @@ export default makeStyles((props) => ({
         letterSpacing: '1.1px',
         lineHeight: '16px',
         padding: 6
+    },
+    likeButton: {
+        display: 'flex',
+        boxSizing: 'border-box',
+        width: '95%',
+        border: 'groove 3px #fff',
+        borderRadius: '0  0 8px 8px',
+        background: 'rgba(0,0,0,0.8)',
+        zIndex: 11,
+        textAlign: 'initial',
+        marginTop: '-3px',
+        lineHeight: '16px',
+        padding: '0 16px 8px 16px',
+        justifyContent: 'space-between',
     }
 }))
